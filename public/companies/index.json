@@ -1,0 +1,1433 @@
+[
+  {
+    "symbol": "AAPL",
+    "name": "Apple Inc.",
+    "sector": "Information Technology",
+    "profile": "companies/AAPL/profile.json",
+    "logo": "img/companies/ny/apple.png",
+    "history": "history/AAPL.json",
+    "market": "US"
+  },
+  {
+    "symbol": "MSFT",
+    "name": "Microsoft Corporation",
+    "sector": "Information Technology",
+    "profile": "companies/MSFT/profile.json",
+    "logo": "img/companies/ny/microsoft.png",
+    "history": "history/MSFT.json",
+    "market": "US"
+  },
+  {
+    "symbol": "NVDA",
+    "name": "NVIDIA Corporation",
+    "sector": "Information Technology",
+    "profile": "companies/NVDA/profile.json",
+    "logo": "img/companies/ny/nvidia.png",
+    "history": "history/NVDA.json",
+    "market": "US"
+  },
+  {
+    "symbol": "AMZN",
+    "name": "Amazon.com, Inc.",
+    "sector": "Consumer Discretionary",
+    "profile": "companies/AMZN/profile.json",
+    "logo": "img/companies/ny/amazon.png",
+    "history": "history/AMZN.json",
+    "market": "US"
+  },
+  {
+    "symbol": "GOOGL",
+    "name": "Alphabet Inc. Class A",
+    "sector": "Communication Services",
+    "profile": "companies/GOOGL/profile.json",
+    "logo": "img/companies/ny/google.webp",
+    "history": "history/GOOGL.json",
+    "market": "US"
+  },
+  {
+    "symbol": "GOOG",
+    "name": "Alphabet Inc. Class C",
+    "sector": "Communication Services",
+    "profile": "companies/GOOG/profile.json",
+    "logo": "img/companies/ny/google.webp",
+    "history": "history/GOOG.json",
+    "market": "US"
+  },
+  {
+    "symbol": "META",
+    "name": "Meta Platforms, Inc.",
+    "sector": "Communication Services",
+    "profile": "companies/META/profile.json",
+    "logo": "img/companies/ny/meta.png",
+    "history": "history/META.json",
+    "market": "US"
+  },
+  {
+    "symbol": "AVGO",
+    "name": "Broadcom Inc.",
+    "sector": "Information Technology",
+    "profile": "companies/AVGO/profile.json",
+    "logo": "img/companies/ny/broadcom.png",
+    "history": "history/AVGO.json",
+    "market": "US"
+  },
+  {
+    "symbol": "LLY",
+    "name": "Eli Lilly and Company",
+    "sector": "Health Care",
+    "profile": "companies/LLY/profile.json",
+    "logo": "img/companies/ny/lilly.png",
+    "history": "history/LLY.json",
+    "market": "US"
+  },
+  {
+    "symbol": "TSLA",
+    "name": "Tesla, Inc.",
+    "sector": "Consumer Discretionary",
+    "profile": "companies/TSLA/profile.json",
+    "logo": "img/companies/ny/tesla.png",
+    "history": "history/TSLA.json",
+    "market": "US"
+  },
+  {
+    "symbol": "JPM",
+    "name": "JPMorgan Chase & Co.",
+    "sector": "Financials",
+    "profile": "companies/JPM/profile.json",
+    "logo": "img/companies/ny/jpmorgan.svg",
+    "history": "history/JPM.json",
+    "market": "US"
+  },
+  {
+    "symbol": "V",
+    "name": "Visa Inc.",
+    "sector": "Financials",
+    "profile": "companies/V/profile.json",
+    "logo": "img/companies/ny/visa.png",
+    "history": "history/V.json",
+    "market": "US"
+  },
+  {
+    "symbol": "XOM",
+    "name": "Exxon Mobil Corporation",
+    "sector": "Energy",
+    "profile": "companies/XOM/profile.json",
+    "logo": "img/companies/ny/exxon.png",
+    "history": "history/XOM.json",
+    "market": "US"
+  },
+  {
+    "symbol": "UNH",
+    "name": "UnitedHealth Group Incorporated",
+    "sector": "Health Care",
+    "profile": "companies/UNH/profile.json",
+    "logo": "img/companies/ny/unitedhealthcare.png",
+    "history": "history/UNH.json",
+    "market": "US"
+  },
+  {
+    "symbol": "JNJ",
+    "name": "Johnson & Johnson",
+    "sector": "Health Care",
+    "profile": "companies/JNJ/profile.json",
+    "logo": "img/companies/ny/johnson.png",
+    "history": "history/JNJ.json",
+    "market": "US"
+  },
+  {
+    "symbol": "WMT",
+    "name": "Walmart Inc.",
+    "sector": "Consumer Staples",
+    "profile": "companies/WMT/profile.json",
+    "logo": "img/companies/ny/walmart.png",
+    "history": "history/WMT.json",
+    "market": "US"
+  },
+  {
+    "symbol": "MA",
+    "name": "Mastercard Incorporated",
+    "sector": "Financials",
+    "profile": "companies/MA/profile.json",
+    "logo": "img/companies/ny/mastercard.png",
+    "history": "history/MA.json",
+    "market": "US"
+  },
+  {
+    "symbol": "PG",
+    "name": "Procter & Gamble Company",
+    "sector": "Consumer Staples",
+    "profile": "companies/PG/profile.json",
+    "logo": "img/companies/ny/pg.png",
+    "history": "history/PG.json",
+    "market": "US"
+  },
+  {
+    "symbol": "ORCL",
+    "name": "Oracle Corporation",
+    "sector": "Information Technology",
+    "profile": "companies/ORCL/profile.json",
+    "logo": "img/companies/ny/oracle.png",
+    "history": "history/ORCL.json",
+    "market": "US"
+  },
+  {
+    "symbol": "COST",
+    "name": "Costco Wholesale Corporation",
+    "sector": "Consumer Staples",
+    "profile": "companies/COST/profile.json",
+    "logo": "img/companies/ny/costco.png",
+    "history": "history/COST.json",
+    "market": "US"
+  },
+  {
+    "symbol": "MRK",
+    "name": "Merck & Co., Inc.",
+    "sector": "Health Care",
+    "profile": "companies/MRK/profile.json",
+    "logo": "img/companies/ny/merck.png",
+    "history": "history/MRK.json",
+    "market": "US"
+  },
+  {
+    "symbol": "HD",
+    "name": "The Home Depot, Inc.",
+    "sector": "Consumer Discretionary",
+    "profile": "companies/HD/profile.json",
+    "logo": "img/companies/ny/home-depot.png",
+    "history": "history/HD.json",
+    "market": "US"
+  },
+  {
+    "symbol": "KO",
+    "name": "The Coca-Cola Company",
+    "sector": "Consumer Staples",
+    "profile": "companies/KO/profile.json",
+    "logo": "img/companies/ny/coca-cola.png",
+    "history": "history/KO.json",
+    "market": "US"
+  },
+  {
+    "symbol": "PEP",
+    "name": "PepsiCo, Inc.",
+    "sector": "Consumer Staples",
+    "profile": "companies/PEP/profile.json",
+    "logo": "img/companies/ny/pepsico.png",
+    "history": "history/PEP.json",
+    "market": "US"
+  },
+  {
+    "symbol": "BAC",
+    "name": "Bank of America Corporation",
+    "sector": "Financials",
+    "profile": "companies/BAC/profile.json",
+    "logo": "img/companies/ny/boa.png",
+    "history": "history/BAC.json",
+    "market": "US"
+  },
+  {
+    "symbol": "ADBE",
+    "name": "Adobe Inc.",
+    "sector": "Information Technology",
+    "profile": "companies/ADBE/profile.json",
+    "logo": "img/companies/ny/adobe.png",
+    "history": "history/ADBE.json",
+    "market": "US"
+  },
+  {
+    "symbol": "CRM",
+    "name": "Salesforce, Inc.",
+    "sector": "Information Technology",
+    "profile": "companies/CRM/profile.json",
+    "logo": "img/companies/ny/salesforce.webp",
+    "history": "history/CRM.json",
+    "market": "US"
+  },
+  {
+    "symbol": "NFLX",
+    "name": "Netflix, Inc.",
+    "sector": "Communication Services",
+    "profile": "companies/NFLX/profile.json",
+    "logo": "img/companies/ny/netflix.png",
+    "history": "history/NFLX.json",
+    "market": "US"
+  },
+  {
+    "symbol": "CSCO",
+    "name": "Cisco Systems, Inc.",
+    "sector": "Information Technology",
+    "profile": "companies/CSCO/profile.json",
+    "logo": "img/companies/ny/cisco.png",
+    "history": "history/CSCO.json",
+    "market": "US"
+  },
+  {
+    "symbol": "AMD",
+    "name": "Advanced Micro Devices, Inc.",
+    "sector": "Information Technology",
+    "profile": "companies/AMD/profile.json",
+    "logo": "img/companies/ny/amd.webp",
+    "history": "history/AMD.json",
+    "market": "US"
+  },
+  {
+    "symbol": "600519.SS",
+    "name": "Kweichow Moutai Co., Ltd.",
+    "sector": "Consumer Staples",
+    "profile": "companies/600519.SS/profile.json",
+    "logo": "img/companies/shanghai/moutai.png",
+    "history": "history/600519.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "601318.SS",
+    "name": "Ping An Insurance (Group) Co. of China",
+    "sector": "Financials",
+    "profile": "companies/601318.SS/profile.json",
+    "logo": "img/companies/shanghai/ping-an.png",
+    "history": "history/601318.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "601398.SS",
+    "name": "Industrial and Commercial Bank of China",
+    "sector": "Financials",
+    "profile": "companies/601398.SS/profile.json",
+    "logo": "img/companies/shanghai/industrial-bank.svg",
+    "history": "history/601398.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "601288.SS",
+    "name": "Agricultural Bank of China",
+    "sector": "Financials",
+    "profile": "companies/601288.SS/profile.json",
+    "logo": "img/companies/shanghai/agri-bank-of-china.png",
+    "history": "history/601288.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "601988.SS",
+    "name": "Bank of China",
+    "sector": "Financials",
+    "profile": "companies/601988.SS/profile.json",
+    "logo": "img/companies/shanghai/bank-of-china.png",
+    "history": "history/601988.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "601857.SS",
+    "name": "PetroChina Company Limited",
+    "sector": "Energy",
+    "profile": "companies/601857.SS/profile.json",
+    "logo": "img/companies/shanghai/petrochina.svg",
+    "history": "history/601857.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "600028.SS",
+    "name": "China Petroleum & Chemical (Sinopec)",
+    "sector": "Energy",
+    "profile": "companies/600028.SS/profile.json",
+    "logo": "img/companies/shanghai/sinopec.svg",
+    "history": "history/600028.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "600036.SS",
+    "name": "China Merchants Bank",
+    "sector": "Financials",
+    "profile": "companies/600036.SS/profile.json",
+    "logo": "img/companies/shanghai/china-merchants-bank.svg",
+    "history": "history/600036.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "601166.SS",
+    "name": "Industrial Bank Co., Ltd.",
+    "sector": "Financials",
+    "profile": "companies/601166.SS/profile.json",
+    "logo": "img/companies/shanghai/industrial-bank.svg",
+    "history": "history/601166.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "600900.SS",
+    "name": "China Yangtze Power Co., Ltd.",
+    "sector": "Utilities",
+    "profile": "companies/600900.SS/profile.json",
+    "logo": "img/companies/shanghai/yangtse-power.png",
+    "history": "history/600900.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "601888.SS",
+    "name": "China Tourism Group Duty Free",
+    "sector": "Consumer Discretionary",
+    "profile": "companies/601888.SS/profile.json",
+    "logo": "img/companies/shanghai/china-tourism-group.png",
+    "history": "history/601888.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "601012.SS",
+    "name": "LONGi Green Energy Technology",
+    "sector": "Information Technology",
+    "profile": "companies/601012.SS/profile.json",
+    "logo": "img/companies/shanghai/longi.png",
+    "history": "history/601012.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "600104.SS",
+    "name": "SAIC Motor Corporation Limited",
+    "sector": "Consumer Discretionary",
+    "profile": "companies/600104.SS/profile.json",
+    "logo": "img/companies/shanghai/saic.png",
+    "history": "history/600104.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "600030.SS",
+    "name": "CITIC Securities Co., Ltd.",
+    "sector": "Financials",
+    "profile": "companies/600030.SS/profile.json",
+    "logo": "img/companies/shanghai/citic.png",
+    "history": "history/600030.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "600585.SS",
+    "name": "Anhui Conch Cement Company Limited",
+    "sector": "Materials",
+    "profile": "companies/600585.SS/profile.json",
+    "logo": "img/companies/shanghai/conch.png",
+    "history": "history/600585.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "600000.SS",
+    "name": "Shanghai Pudong Development Bank",
+    "sector": "Financials",
+    "profile": "companies/600000.SS/profile.json",
+    "logo": "img/companies/shanghai/spd.png",
+    "history": "history/600000.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "601601.SS",
+    "name": "China Pacific Insurance (Group)",
+    "sector": "Financials",
+    "profile": "companies/601601.SS/profile.json",
+    "logo": "img/companies/shanghai/China_Pacific_Insurance.png",
+    "history": "history/601601.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "601939.SS",
+    "name": "China Construction Bank",
+    "sector": "Financials",
+    "profile": "companies/601939.SS/profile.json",
+    "logo": "img/companies/shanghai/China_Construction_Bank.png",
+    "history": "history/601939.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "600019.SS",
+    "name": "Baoshan Iron & Steel Co., Ltd.",
+    "sector": "Materials",
+    "profile": "companies/600019.SS/profile.json",
+    "logo": "img/companies/shanghai/baoshan.webp",
+    "history": "history/600019.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "600276.SS",
+    "name": "Jiangsu Hengrui Pharmaceuticals",
+    "sector": "Health Care",
+    "profile": "companies/600276.SS/profile.json",
+    "logo": "img/companies/shanghai/Jiangsu_Hengrui.png",
+    "history": "history/600276.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "601766.SS",
+    "name": "CRRC Corporation Limited",
+    "sector": "Industrials",
+    "profile": "companies/601766.SS/profile.json",
+    "logo": "img/companies/shanghai/crrc.png",
+    "history": "history/601766.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "600309.SS",
+    "name": "Wanhua Chemical Group Co., Ltd.",
+    "sector": "Materials",
+    "profile": "companies/600309.SS/profile.json",
+    "logo": "img/companies/shanghai/wanhua-chemical.png",
+    "history": "history/600309.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "601633.SS",
+    "name": "Great Wall Motor Company Limited",
+    "sector": "Consumer Discretionary",
+    "profile": "companies/601633.SS/profile.json",
+    "logo": "img/companies/shanghai/gwm.png",
+    "history": "history/601633.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "600887.SS",
+    "name": "Inner Mongolia Yili Industrial Group",
+    "sector": "Consumer Staples",
+    "profile": "companies/600887.SS/profile.json",
+    "logo": "img/companies/shanghai/yili.png",
+    "history": "history/600887.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "601668.SS",
+    "name": "China State Construction Engineering",
+    "sector": "Industrials",
+    "profile": "companies/601668.SS/profile.json",
+    "logo": "img/companies/shanghai/cscec.png",
+    "history": "history/601668.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "601658.SS",
+    "name": "Postal Savings Bank of China",
+    "sector": "Financials",
+    "profile": "companies/601658.SS/profile.json",
+    "logo": "img/companies/shanghai/postal-savings-bank-of-china.png",
+    "history": "history/601658.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "601728.SS",
+    "name": "China Telecom Corporation Limited",
+    "sector": "Communication Services",
+    "profile": "companies/601728.SS/profile.json",
+    "logo": "img/companies/shanghai/China-Telecom.png",
+    "history": "history/601728.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "601628.SS",
+    "name": "China Life Insurance Company Limited",
+    "sector": "Financials",
+    "profile": "companies/601628.SS/profile.json",
+    "logo": "img/companies/shanghai/china-life-insurance.svg",
+    "history": "history/601628.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "688981.SS",
+    "name": "Semiconductor Manufacturing International (SMIC)",
+    "sector": "Information Technology",
+    "profile": "companies/688981.SS/profile.json",
+    "logo": "img/companies/shanghai/SMIC.png",
+    "history": "history/688981.SS.json",
+    "market": "CN"
+  },
+  {
+    "symbol": "MC.PA",
+    "name": "LVMH Mo\u00ebt Hennessy Louis Vuitton",
+    "sector": "Consumer Discretionary",
+    "profile": "companies/MC.PA/profile.json",
+    "logo": "img/companies/euro/lvmh.png",
+    "history": "history/MC.PA.json",
+    "market": "EU"
+  },
+  {
+    "symbol": "ASML.AS",
+    "name": "ASML Holding N.V.",
+    "sector": "Information Technology",
+    "profile": "companies/ASML.AS/profile.json",
+    "logo": "img/companies/euro/asml.png",
+    "history": "history/ASML.AS.json",
+    "market": "EU"
+  },
+  {
+    "symbol": "OR.PA",
+    "name": "L'Or\u00e9al S.A.",
+    "sector": "Consumer Staples",
+    "profile": "companies/OR.PA/profile.json",
+    "logo": "img/companies/euro/loreal.png",
+    "history": "history/OR.PA.json",
+    "market": "EU"
+  },
+  {
+    "symbol": "TTE.PA",
+    "name": "TotalEnergies SE",
+    "sector": "Energy",
+    "profile": "companies/TTE.PA/profile.json",
+    "logo": "img/companies/euro/total.png",
+    "history": "history/TTE.PA.json",
+    "market": "EU"
+  },
+  {
+    "symbol": "SAN.PA",
+    "name": "Sanofi",
+    "sector": "Health Care",
+    "profile": "companies/SAN.PA/profile.json",
+    "logo": "img/companies/euro/sanofi.png",
+    "history": "history/SAN.PA.json",
+    "market": "EU"
+  },
+  {
+    "symbol": "RMS.PA",
+    "name": "Herm\u00e8s International SCA",
+    "sector": "Consumer Discretionary",
+    "profile": "companies/RMS.PA/profile.json",
+    "logo": "img/companies/euro/hermes.png",
+    "history": "history/RMS.PA.json",
+    "market": "EU"
+  },
+  {
+    "symbol": "AIR.PA",
+    "name": "Airbus SE",
+    "sector": "Industrials",
+    "profile": "companies/AIR.PA/profile.json",
+    "logo": "img/companies/euro/airbus.png",
+    "history": "history/AIR.PA.json",
+    "market": "EU"
+  },
+  {
+    "symbol": "BNP.PA",
+    "name": "BNP Paribas",
+    "sector": "Financials",
+    "profile": "companies/BNP.PA/profile.json",
+    "logo": "img/companies/euro/bnp.png",
+    "history": "history/BNP.PA.json",
+    "market": "EU"
+  },
+  {
+    "symbol": "SU.PA",
+    "name": "Schneider Electric SE",
+    "sector": "Industrials",
+    "profile": "companies/SU.PA/profile.json",
+    "logo": "img/companies/euro/schneider.png",
+    "history": "history/SU.PA.json",
+    "market": "EU"
+  },
+  {
+    "symbol": "KER.PA",
+    "name": "Kering",
+    "sector": "Consumer Discretionary",
+    "profile": "companies/KER.PA/profile.json",
+    "logo": "img/companies/euro/kering.jpg",
+    "history": "history/KER.PA.json",
+    "market": "EU"
+  },
+  {
+    "symbol": "7203.T",
+    "name": "Toyota Motor Corporation",
+    "sector": "Consumer Discretionary",
+    "profile": "companies/7203.T/profile.json",
+    "logo": "img/companies/tokyo/toyota.png",
+    "history": "history/7203.T.json",
+    "market": "JP"
+  },
+  {
+    "symbol": "6758.T",
+    "name": "Sony Group Corporation",
+    "sector": "Communication Services",
+    "profile": "companies/6758.T/profile.json",
+    "logo": "img/companies/tokyo/sony.png",
+    "history": "history/6758.T.json",
+    "market": "JP"
+  },
+  {
+    "symbol": "9984.T",
+    "name": "SoftBank Group Corp.",
+    "sector": "Communication Services",
+    "profile": "companies/9984.T/profile.json",
+    "logo": "img/companies/tokyo/softbank.png",
+    "history": "history/9984.T.json",
+    "market": "JP"
+  },
+  {
+    "symbol": "6861.T",
+    "name": "Keyence Corporation",
+    "sector": "Information Technology",
+    "profile": "companies/6861.T/profile.json",
+    "logo": "img/companies/tokyo/keyence.png",
+    "history": "history/6861.T.json",
+    "market": "JP"
+  },
+  {
+    "symbol": "8035.T",
+    "name": "Tokyo Electron Ltd.",
+    "sector": "Information Technology",
+    "profile": "companies/8035.T/profile.json",
+    "logo": "img/companies/tokyo/tokyo-electron.png",
+    "history": "history/8035.T.json",
+    "market": "JP"
+  },
+  {
+    "symbol": "9983.T",
+    "name": "Fast Retailing Co., Ltd.",
+    "sector": "Consumer Discretionary",
+    "profile": "companies/9983.T/profile.json",
+    "logo": "img/companies/tokyo/fast-retailing.png",
+    "history": "history/9983.T.json",
+    "market": "JP"
+  },
+  {
+    "symbol": "9432.T",
+    "name": "Nippon Telegraph and Telephone Corp.",
+    "sector": "Communication Services",
+    "profile": "companies/9432.T/profile.json",
+    "logo": "img/companies/tokyo/ntt.svg",
+    "history": "history/9432.T.json",
+    "market": "JP"
+  },
+  {
+    "symbol": "6098.T",
+    "name": "Recruit Holdings Co., Ltd.",
+    "sector": "Industrials",
+    "profile": "companies/6098.T/profile.json",
+    "logo": "img/companies/tokyo/recruit.png",
+    "history": "history/6098.T.json",
+    "market": "JP"
+  },
+  {
+    "symbol": "4502.T",
+    "name": "Takeda Pharmaceutical Co., Ltd.",
+    "sector": "Health Care",
+    "profile": "companies/4502.T/profile.json",
+    "logo": "img/companies/tokyo/takeda.png",
+    "history": "history/4502.T.json",
+    "market": "JP"
+  },
+  {
+    "symbol": "8316.T",
+    "name": "Sumitomo Mitsui Financial Group, Inc.",
+    "sector": "Financials",
+    "profile": "companies/8316.T/profile.json",
+    "logo": "img/companies/tokyo/sumimoto.png",
+    "history": "history/8316.T.json",
+    "market": "JP"
+  },
+  {
+    "symbol": "2222.SR",
+    "name": "Saudi Arabian Oil Company (Aramco)",
+    "sector": "Energy",
+    "profile": "companies/2222.SR/profile.json",
+    "logo": "img/companies/riyadh/aramco.png",
+    "history": "history/2222.SR.json",
+    "market": "SA"
+  },
+  {
+    "symbol": "1120.SR",
+    "name": "Al Rajhi Bank",
+    "sector": "Financials",
+    "profile": "companies/1120.SR/profile.json",
+    "logo": "img/companies/riyadh/alrahji.png",
+    "history": "history/1120.SR.json",
+    "market": "SA"
+  },
+  {
+    "symbol": "2010.SR",
+    "name": "Saudi Basic Industries Corporation (SABIC)",
+    "sector": "Materials",
+    "profile": "companies/2010.SR/profile.json",
+    "logo": "img/companies/riyadh/sabic.png",
+    "history": "history/2010.SR.json",
+    "market": "SA"
+  },
+  {
+    "symbol": "1180.SR",
+    "name": "The Saudi National Bank",
+    "sector": "Financials",
+    "profile": "companies/1180.SR/profile.json",
+    "logo": "img/companies/riyadh/snbank.png",
+    "history": "history/1180.SR.json",
+    "market": "SA"
+  },
+  {
+    "symbol": "1211.SR",
+    "name": "Saudi Arabian Mining Company",
+    "sector": "Materials",
+    "profile": "companies/1211.SR/profile.json",
+    "logo": "img/companies/riyadh/saudi-mining.png",
+    "history": "history/1211.SR.json",
+    "market": "SA"
+  },
+  {
+    "symbol": "7010.SR",
+    "name": "Saudi Telecom Company (stc)",
+    "sector": "Communication Services",
+    "profile": "companies/7010.SR/profile.json",
+    "logo": "img/companies/riyadh/stc.svg",
+    "history": "history/7010.SR.json",
+    "market": "SA"
+  },
+  {
+    "symbol": "2280.SR",
+    "name": "Almarai Company",
+    "sector": "Consumer Staples",
+    "profile": "companies/2280.SR/profile.json",
+    "logo": "img/companies/riyadh/almarai.png",
+    "history": "history/2280.SR.json",
+    "market": "SA"
+  },
+  {
+    "symbol": "1050.SR",
+    "name": "Saudi British Bank",
+    "sector": "Financials",
+    "profile": "companies/1050.SR/profile.json",
+    "logo": "img/companies/riyadh/sab-bank.png",
+    "history": "history/1050.SR.json",
+    "market": "SA"
+  },
+  {
+    "symbol": "1060.SR",
+    "name": "Banque Saudi Fransi",
+    "sector": "Financials",
+    "profile": "companies/1060.SR/profile.json",
+    "logo": "img/companies/riyadh/bs_fransi.png",
+    "history": "history/1060.SR.json",
+    "market": "SA"
+  },
+  {
+    "symbol": "4013.SR",
+    "name": "Dr. Sulaiman Al Habib Medical Services Group",
+    "sector": "Health Care",
+    "profile": "companies/4013.SR/profile.json",
+    "logo": "img/companies/riyadh/suleiman-habib.png",
+    "history": "history/4013.SR.json",
+    "market": "SA"
+  },
+  {
+    "symbol": "BTC-USD",
+    "name": "Bitcoin",
+    "sector": "Cryptocurrency",
+    "profile": "companies/BTC-USD/profile.json",
+    "logo": "img/companies/crypto/bitcoin.webp",
+    "history": "history/BTC-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "ETH-USD",
+    "name": "Ethereum",
+    "sector": "Cryptocurrency",
+    "profile": "companies/ETH-USD/profile.json",
+    "logo": "img/companies/crypto/ethereum.png",
+    "history": "history/ETH-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "USDT-USD",
+    "name": "Tether (USDT)",
+    "sector": "Cryptocurrency",
+    "profile": "companies/USDT-USD/profile.json",
+    "logo": "img/companies/crypto/tether.png",
+    "history": "history/USDT-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "BNB-USD",
+    "name": "BNB",
+    "sector": "Cryptocurrency",
+    "profile": "companies/BNB-USD/profile.json",
+    "logo": "img/companies/crypto/bnb.png",
+    "history": "history/BNB-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "SOL-USD",
+    "name": "Solana",
+    "sector": "Cryptocurrency",
+    "profile": "companies/SOL-USD/profile.json",
+    "logo": "img/companies/crypto/solana.png",
+    "history": "history/SOL-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "XRP-USD",
+    "name": "Ripple (XRP)",
+    "sector": "Cryptocurrency",
+    "profile": "companies/XRP-USD/profile.json",
+    "logo": "img/companies/crypto/xrp.png",
+    "history": "history/XRP-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "USDC-USD",
+    "name": "USD Coin",
+    "sector": "Cryptocurrency",
+    "profile": "companies/USDC-USD/profile.json",
+    "logo": "img/companies/crypto/usdcoin.png",
+    "history": "history/USDC-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "DOGE-USD",
+    "name": "Dogecoin",
+    "sector": "Cryptocurrency",
+    "profile": "companies/DOGE-USD/profile.json",
+    "logo": "img/companies/crypto/dogecoin.png",
+    "history": "history/DOGE-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "ADA-USD",
+    "name": "Cardano",
+    "sector": "Cryptocurrency",
+    "profile": "companies/ADA-USD/profile.json",
+    "logo": "img/companies/crypto/cardano.png",
+    "history": "history/ADA-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "TRX-USD",
+    "name": "TRON",
+    "sector": "Cryptocurrency",
+    "profile": "companies/TRX-USD/profile.json",
+    "logo": "img/companies/crypto/tron.png",
+    "history": "history/TRX-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "TON-USD",
+    "name": "Toncoin",
+    "sector": "Cryptocurrency",
+    "profile": "companies/TON-USD/profile.json",
+    "logo": "img/companies/crypto/toncoin.png",
+    "history": "history/TON-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "AVAX-USD",
+    "name": "Avalanche",
+    "sector": "Cryptocurrency",
+    "profile": "companies/AVAX-USD/profile.json",
+    "logo": "img/companies/crypto/avalanche.png",
+    "history": "history/AVAX-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "SHIB-USD",
+    "name": "Shiba Inu",
+    "sector": "Cryptocurrency",
+    "profile": "companies/SHIB-USD/profile.json",
+    "logo": "img/companies/crypto/shiba.png",
+    "history": "history/SHIB-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "DOT-USD",
+    "name": "Polkadot",
+    "sector": "Cryptocurrency",
+    "profile": "companies/DOT-USD/profile.json",
+    "logo": "img/companies/crypto/polkadot.png",
+    "history": "history/DOT-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "DAI-USD",
+    "name": "Dai",
+    "sector": "Cryptocurrency",
+    "profile": "companies/DAI-USD/profile.json",
+    "logo": "img/companies/crypto/dai.png",
+    "history": "history/DAI-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "LTC-USD",
+    "name": "Litecoin",
+    "sector": "Cryptocurrency",
+    "profile": "companies/LTC-USD/profile.json",
+    "logo": "img/companies/crypto/litecoin.png",
+    "history": "history/LTC-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "WBTC-USD",
+    "name": "Wrapped Bitcoin",
+    "sector": "Cryptocurrency",
+    "profile": "companies/WBTC-USD/profile.json",
+    "logo": "img/companies/crypto/wrappedbitcoin.webp",
+    "history": "history/WBTC-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "BCH-USD",
+    "name": "Bitcoin Cash",
+    "sector": "Cryptocurrency",
+    "profile": "companies/BCH-USD/profile.json",
+    "logo": "img/companies/crypto/bcash.webp",
+    "history": "history/BCH-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "LINK-USD",
+    "name": "Chainlink",
+    "sector": "Cryptocurrency",
+    "profile": "companies/LINK-USD/profile.json",
+    "logo": "img/companies/crypto/chainlink.png",
+    "history": "history/LINK-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "NEAR-USD",
+    "name": "NEAR Protocol",
+    "sector": "Cryptocurrency",
+    "profile": "companies/NEAR-USD/profile.json",
+    "logo": "img/companies/crypto/near.png",
+    "history": "history/NEAR-USD.json",
+    "market": "CRYPTO"
+  },
+  {
+    "symbol": "EURUSD=X",
+    "name": "EUR/USD",
+    "sector": "Forex",
+    "profile": "companies/EURUSD=X/profile.json",
+    "logo": "img/companies/forex/usdeur.png",
+    "history": "history/EURUSD=X.json",
+    "market": "FX"
+  },
+  {
+    "symbol": "USDJPY=X",
+    "name": "USD/JPY",
+    "sector": "Forex",
+    "profile": "companies/USDJPY=X/profile.json",
+    "logo": "img/companies/forex/usdjpy.png",
+    "history": "history/USDJPY=X.json",
+    "market": "FX"
+  },
+  {
+    "symbol": "GBPUSD=X",
+    "name": "GBP/USD",
+    "sector": "Forex",
+    "profile": "companies/GBPUSD=X/profile.json",
+    "logo": "img/companies/forex/usdgbp.png",
+    "history": "history/GBPUSD=X.json",
+    "market": "FX"
+  },
+  {
+    "symbol": "USDCNY=X",
+    "name": "USD/CNY",
+    "sector": "Forex",
+    "profile": "companies/USDCNY=X/profile.json",
+    "logo": "img/companies/forex/usdcny.png",
+    "history": "history/USDCNY=X.json",
+    "market": "FX"
+  },
+  {
+    "symbol": "USDCHF=X",
+    "name": "USD/CHF",
+    "sector": "Forex",
+    "profile": "companies/USDCHF=X/profile.json",
+    "logo": "img/companies/forex/usdchf.png",
+    "history": "history/USDCHF=X.json",
+    "market": "FX"
+  },
+  {
+    "symbol": "AUDUSD=X",
+    "name": "AUD/USD",
+    "sector": "Forex",
+    "profile": "companies/AUDUSD=X/profile.json",
+    "logo": "img/companies/forex/usdaud.png",
+    "history": "history/AUDUSD=X.json",
+    "market": "FX"
+  },
+  {
+    "symbol": "USDCAD=X",
+    "name": "USD/CAD",
+    "sector": "Forex",
+    "profile": "companies/USDCAD=X/profile.json",
+    "logo": "img/companies/forex/usdcad.png",
+    "history": "history/USDCAD=X.json",
+    "market": "FX"
+  },
+  {
+    "symbol": "NZDUSD=X",
+    "name": "NZD/USD",
+    "sector": "Forex",
+    "profile": "companies/NZDUSD=X/profile.json",
+    "logo": "img/companies/forex/usdnzd.png",
+    "history": "history/NZDUSD=X.json",
+    "market": "FX"
+  },
+  {
+    "symbol": "EURJPY=X",
+    "name": "EUR/JPY",
+    "sector": "Forex",
+    "profile": "companies/EURJPY=X/profile.json",
+    "logo": "img/companies/forex/eurjpy.png",
+    "history": "history/EURJPY=X.json",
+    "market": "FX"
+  },
+  {
+    "symbol": "GBPJPY=X",
+    "name": "GBP/JPY",
+    "sector": "Forex",
+    "profile": "companies/GBPJPY=X/profile.json",
+    "logo": "img/companies/forex/gbpjpy.png",
+    "history": "history/GBPJPY=X.json",
+    "market": "FX"
+  },
+  {
+    "symbol": "GC=F",
+    "name": "Gold Futures",
+    "sector": "Commodities",
+    "profile": "companies/GC=F/profile.json",
+    "logo": "img/companies/commodities/gold.png",
+    "history": "history/GC=F.json",
+    "market": "COM"
+  },
+  {
+    "symbol": "SI=F",
+    "name": "Silver Futures",
+    "sector": "Commodities",
+    "profile": "companies/SI=F/profile.json",
+    "logo": "img/companies/commodities/silver.webp",
+    "history": "history/SI=F.json",
+    "market": "COM"
+  },
+  {
+    "symbol": "PL=F",
+    "name": "Platinum Futures",
+    "sector": "Commodities",
+    "profile": "companies/PL=F/profile.json",
+    "logo": "img/companies/commodities/platinum.webp",
+    "history": "history/PL=F.json",
+    "market": "COM"
+  },
+  {
+    "symbol": "CL=F",
+    "name": "Crude Oil WTI",
+    "sector": "Energy",
+    "profile": "companies/CL=F/profile.json",
+    "logo": "img/companies/commodities/oil1.png",
+    "history": "history/CL=F.json",
+    "market": "COM"
+  },
+  {
+    "symbol": "BZ=F",
+    "name": "Brent Crude Oil",
+    "sector": "Energy",
+    "profile": "companies/BZ=F/profile.json",
+    "logo": "img/companies/commodities/oil2.png",
+    "history": "history/BZ=F.json",
+    "market": "COM"
+  },
+  {
+    "symbol": "NG=F",
+    "name": "Natural Gas",
+    "sector": "Energy",
+    "profile": "companies/NG=F/profile.json",
+    "logo": "img/companies/commodities/gas.png",
+    "history": "history/NG=F.json",
+    "market": "COM"
+  },
+  {
+    "symbol": "ZC=F",
+    "name": "Corn Futures",
+    "sector": "Agriculture",
+    "profile": "companies/ZC=F/profile.json",
+    "logo": "img/companies/commodities/corn.png",
+    "history": "history/ZC=F.json",
+    "market": "COM"
+  },
+  {
+    "symbol": "ZW=F",
+    "name": "Wheat Futures",
+    "sector": "Agriculture",
+    "profile": "companies/ZW=F/profile.json",
+    "logo": "img/companies/commodities/wheat.webp",
+    "history": "history/ZW=F.json",
+    "market": "COM"
+  },
+  {
+    "symbol": "ZS=F",
+    "name": "Soybean Futures",
+    "sector": "Agriculture",
+    "profile": "companies/ZS=F/profile.json",
+    "logo": "img/companies/commodities/soybeans.webp",
+    "history": "history/ZS=F.json",
+    "market": "COM"
+  },
+  {
+    "symbol": "KC=F",
+    "name": "Coffee Futures",
+    "sector": "Agriculture",
+    "profile": "companies/KC=F/profile.json",
+    "logo": "img/companies/commodities/coffee_bean.png",
+    "history": "history/KC=F.json",
+    "market": "COM"
+  },
+  {
+    "symbol": "^GSPC",
+    "name": "S&P 500",
+    "sector": "Index",
+    "profile": "companies/^GSPC/profile.json",
+    "logo": "img/companies/indices/us.png",
+    "history": "history/^GSPC.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^DJI",
+    "name": "Dow Jones Industrial Average",
+    "sector": "Index",
+    "profile": "companies/^DJI/profile.json",
+    "logo": "img/companies/indices/us.png",
+    "history": "history/^DJI.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^IXIC",
+    "name": "NASDAQ Composite",
+    "sector": "Index",
+    "profile": "companies/^IXIC/profile.json",
+    "logo": "img/companies/indices/us.png",
+    "history": "history/^IXIC.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^RUT",
+    "name": "Russell 2000",
+    "sector": "Index",
+    "profile": "companies/^RUT/profile.json",
+    "logo": "img/companies/indices/us.png",
+    "history": "history/^RUT.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^GSPTSE",
+    "name": "S&P/TSX Composite",
+    "sector": "Index",
+    "profile": "companies/^GSPTSE/profile.json",
+    "logo": "img/companies/indices/us.png",
+    "history": "history/^GSPTSE.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^FTSE",
+    "name": "FTSE 100",
+    "sector": "Index",
+    "profile": "companies/^FTSE/profile.json",
+    "logo": "img/companies/indices/ftse.png",
+    "history": "history/^FTSE.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^GDAXI",
+    "name": "DAX",
+    "sector": "Index",
+    "profile": "companies/^GDAXI/profile.json",
+    "logo": "img/companies/indices/gdaxi.png",
+    "history": "history/^GDAXI.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^FCHI",
+    "name": "CAC 40",
+    "sector": "Index",
+    "profile": "companies/^FCHI/profile.json",
+    "logo": "img/companies/indices/fchi.png",
+    "history": "history/^FCHI.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^STOXX50E",
+    "name": "Euro STOXX 50",
+    "sector": "Index",
+    "profile": "companies/^STOXX50E/profile.json",
+    "logo": "img/companies/indices/eurostoxx-50.png",
+    "history": "history/^STOXX50E.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "FTSEMIB.MI",
+    "name": "FTSE MIB",
+    "sector": "Index",
+    "profile": "companies/FTSEMIB.MI/profile.json",
+    "logo": "img/companies/indices/ftsemib.png",
+    "history": "history/FTSEMIB.MI.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "SMIN.SW",
+    "name": "Swiss Market Index",
+    "sector": "Index",
+    "profile": "companies/SMIN.SW/profile.json",
+    "logo": "img/companies/indices/smin.png",
+    "history": "history/SMIN.SW.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^IBEX",
+    "name": "IBEX 35",
+    "sector": "Index",
+    "profile": "companies/^IBEX/profile.json",
+    "logo": "img/companies/indices/ibex.png",
+    "history": "history/^IBEX.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^AEX",
+    "name": "AEX",
+    "sector": "Index",
+    "profile": "companies/^AEX/profile.json",
+    "logo": "img/companies/indices/aex.png",
+    "history": "history/^AEX.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^BFX",
+    "name": "BEL 20",
+    "sector": "Index",
+    "profile": "companies/^BFX/profile.json",
+    "logo": "img/companies/indices/bfx.png",
+    "history": "history/^BFX.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^OMX",
+    "name": "OMX Nordic All-Share",
+    "sector": "Index",
+    "profile": "companies/^OMX/profile.json",
+    "logo": "img/companies/indices/omx.svg",
+    "history": "history/^OMX.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^N100",
+    "name": "Euronext 100",
+    "sector": "Index",
+    "profile": "companies/^N100/profile.json",
+    "logo": "img/companies/indices/eu.png",
+    "history": "history/^N100.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^N225",
+    "name": "Nikkei 225",
+    "sector": "Index",
+    "profile": "companies/^N225/profile.json",
+    "logo": "img/companies/indices/n225.png",
+    "history": "history/^N225.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "TOPIX100.T",
+    "name": "TOPIX",
+    "sector": "Index",
+    "profile": "companies/TOPIX100.T/profile.json",
+    "logo": "img/companies/indices/n225.png",
+    "history": "history/TOPIX100.T.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^HSI",
+    "name": "Hang Seng Index",
+    "sector": "Index",
+    "profile": "companies/^HSI/profile.json",
+    "logo": "img/companies/indices/hsi.png",
+    "history": "history/^HSI.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "000001.SS",
+    "name": "Shanghai Composite",
+    "sector": "Index",
+    "profile": "companies/000001.SS/profile.json",
+    "logo": "img/companies/indices/cn.png",
+    "history": "history/000001.SS.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "399001.SZ",
+    "name": "SZSE Component",
+    "sector": "Index",
+    "profile": "companies/399001.SZ/profile.json",
+    "logo": "img/companies/indices/cn.png",
+    "history": "history/399001.SZ.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^KS11",
+    "name": "KOSPI",
+    "sector": "Index",
+    "profile": "companies/^KS11/profile.json",
+    "logo": "img/companies/indices/ks11.png",
+    "history": "history/^KS11.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^TWII",
+    "name": "TAIEX",
+    "sector": "Index",
+    "profile": "companies/^TWII/profile.json",
+    "logo": "img/companies/indices/twii.png",
+    "history": "history/^TWII.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^STI",
+    "name": "Straits Times Index",
+    "sector": "Index",
+    "profile": "companies/^STI/profile.json",
+    "logo": "img/companies/indices/sti.png",
+    "history": "history/^STI.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^BSESN",
+    "name": "BSE Sensex",
+    "sector": "Index",
+    "profile": "companies/^BSESN/profile.json",
+    "logo": "img/companies/indices/bse.png",
+    "history": "history/^BSESN.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^AXJO",
+    "name": "S&P/ASX 200",
+    "sector": "Index",
+    "profile": "companies/^AXJO/profile.json",
+    "logo": "img/companies/indices/axjo.png",
+    "history": "history/^AXJO.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^NZ50",
+    "name": "NZX 50",
+    "sector": "Index",
+    "profile": "companies/^NZ50/profile.json",
+    "logo": "img/companies/indices/nz50.png",
+    "history": "history/^NZ50.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^JKSE",
+    "name": "Jakarta Composite",
+    "sector": "Index",
+    "profile": "companies/^JKSE/profile.json",
+    "logo": "img/companies/indices/jkse.png",
+    "history": "history/^JKSE.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^KLSE",
+    "name": "FTSE Bursa Malaysia KLCI",
+    "sector": "Index",
+    "profile": "companies/^KLSE/profile.json",
+    "logo": "img/companies/indices/klse.png",
+    "history": "history/^KLSE.json",
+    "market": "IDX"
+  },
+  {
+    "symbol": "^BVSP",
+    "name": "Bovespa Index",
+    "sector": "Index",
+    "profile": "companies/^BVSP/profile.json",
+    "logo": "img/companies/indices/bovespa.png",
+    "history": "history/^BVSP.json",
+    "market": "IDX"
+  }
+]
