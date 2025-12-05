@@ -19,6 +19,8 @@ Key areas of the product:
 
 ## Getting Started
 
+The application is in production at : https://loic-marigny.github.io/xMarket/
+
 ```bash
 git clone https://github.com/loic-marigny/xMarket.git
 cd xMarket
