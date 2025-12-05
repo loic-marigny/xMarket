@@ -5,7 +5,7 @@ import fr from './fr';
 import ar from './ar';
 import ru from './ru';
 
-const STORAGE_KEY = 'stock-market:locale';
+const STORAGE_KEY = 'xmarket:locale';
 
 const dictionaries: Record<'en' | 'fr' | 'ar' | 'ru', Translations> = {
   en: en as Translations,

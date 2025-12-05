@@ -20,8 +20,8 @@ Key areas of the product:
 ## Getting Started
 
 ```bash
-git clone https://github.com/loic-marigny/stock-market.git
-cd stock-market
+git clone https://github.com/loic-marigny/xMarket.git
+cd xMarket
 npm install
 ```
 

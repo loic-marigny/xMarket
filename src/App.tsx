@@ -65,7 +65,7 @@ export default function App(){
     <div className="app-shell">
       {showGlobalLoader && <LoadingScreen message={t('app.loading')} />}
       <header className="topbar">
-        <a href="https://loic-marigny.github.io/stock-market/" className="brand-mini">xMarket</a>
+        <a href="https://loic-marigny.github.io/xMarket/" className="brand-mini">xMarket</a>
         <LanguageSwitcher />
         <nav className="nav">
           <NavLink to="/" end className={({isActive})=> isActive?"active":""}>{t('nav.explore')}</NavLink>
