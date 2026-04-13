@@ -1,14 +1,43 @@
 import os
 import time
+from datetime import datetime
+from pathlib import Path
+import random
+
 import yfinance as yf
 from supabase import create_client, Client
-from datetime import datetime
-import random
+
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def load_env():
+    """Load .env into process env (dotenv if available, fallback manual)."""
+    env_path = ROOT / ".env"
+    if not env_path.exists():
+        return
+
+    try:
+        from dotenv import load_dotenv  # type: ignore
+
+        load_dotenv(env_path)
+        return
+    except Exception:
+        pass
+
+    for line in env_path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        os.environ.setdefault(key.strip(), value.strip())
 
 # ==========================================
 # CONFIGURATION
 # ==========================================
-SUPABASE_URL = os.environ.get("VITE_SUPABASE_URL")
+load_env()
+
+SUPABASE_URL = os.environ.get("VITE_SUPABASE_URL") or os.environ.get("SUPABASE_URL")
 SUPABASE_KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
 
 # Tables
