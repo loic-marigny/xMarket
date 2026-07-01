@@ -1,0 +1,62 @@
+name: Backfill stock history
+
+on:
+  workflow_dispatch:
+    inputs:
+      symbols:
+        description: "Comma-separated symbols to backfill (leave empty to use all companies)"
+        required: false
+        default: ""
+      from_date:
+        description: "Start date YYYY-MM-DD (leave blank to use the last 365 days)"
+        required: false
+      to_date:
+        description: "End date YYYY-MM-DD (leave blank to use today)"
+        required: false
+      limit:
+        description: "Optional max number of symbols to process"
+        required: false
+        default: "0"
+      dry_run:
+        description: "Only print what would be backfilled"
+        required: false
+        default: "false"
+        type: choice
+        options: ["true", "false"]
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pandas yfinance supabase python-dotenv
+      - name: Backfill history rows
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          args=()
+          if [ -n "${{ github.event.inputs.from_date }}" ]; then
+            args+=(--from-date "${{ github.event.inputs.from_date }}")
+          fi
+          if [ -n "${{ github.event.inputs.to_date }}" ]; then
+            args+=(--to-date "${{ github.event.inputs.to_date }}")
+          fi
+          if [ -n "${{ github.event.inputs.symbols }}" ]; then
+            args+=(--symbols "${{ github.event.inputs.symbols }}")
+          fi
+          if [ "${{ github.event.inputs.limit }}" != "0" ]; then
+            args+=(--limit "${{ github.event.inputs.limit }}")
+          fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            args+=(--dry-run)
+          fi
+          python scripts/backfill_history.py "${args[@]}"
