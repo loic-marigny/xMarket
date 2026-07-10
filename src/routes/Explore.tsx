@@ -115,6 +115,13 @@ const toBusinessDay = (value: string | Date): BusinessDay => {
   } as BusinessDay;
 };
 
+const parseDateOnlyLocal = (value: string): Date => {
+  const [year, month, day] = value
+    .split("-")
+    .map((part) => Number.parseInt(part, 10));
+  return new Date(year, (month || 1) - 1, day || 1);
+};
+
 const ONE_DAY_MS = 24 * 60 * 60 * 1000;
 
 const numberFormatter = (
@@ -1014,7 +1021,7 @@ export default function Explore() {
 
   const dateBounds = useMemo(() => {
     if (!data.length) return null;
-    const firstDate = new Date(data[0].date);
+    const firstDate = parseDateOnlyLocal(data[0].date);
     firstDate.setHours(0, 0, 0, 0);
 
     // Shift the left bound slightly to avoid hugging the edge
@@ -1022,7 +1029,7 @@ export default function Explore() {
     min.setHours(0, 0, 0, 0);
 
     // Right bound = most recent candle date (never "today")
-    const lastDate = new Date(data[data.length - 1].date);
+    const lastDate = parseDateOnlyLocal(data[data.length - 1].date);
     lastDate.setHours(0, 0, 0, 0);
 
     return { min, max: lastDate };
@@ -1069,8 +1076,8 @@ export default function Explore() {
         return;
       }
       const lastEntry = data[data.length - 1];
-      const lastDate = new Date(lastEntry.date);
-      let fromDate = new Date(data[0].date);
+      const lastDate = parseDateOnlyLocal(lastEntry.date);
+      let fromDate = parseDateOnlyLocal(data[0].date);
       const currentYearStart = new Date(new Date().getFullYear(), 0, 1);
 
       if (timeframe === "1M") {
@@ -1085,7 +1092,7 @@ export default function Explore() {
         if (dateBounds) {
           setVisibleRangeClamped(dateBounds.min, dateBounds.max);
         } else {
-          setVisibleRangeClamped(new Date(data[0].date), lastDate);
+          setVisibleRangeClamped(parseDateOnlyLocal(data[0].date), lastDate);
         }
         return;
       }
