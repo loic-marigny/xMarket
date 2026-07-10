@@ -62,11 +62,15 @@
   flex-direction: column;
   gap: 12px;
   min-height: 0;
-  height: 100%;
-  max-height: 100vh;
+  width: calc(100% - 4.5px);
+  height: calc(100% - 24px);
+  max-height: calc(100vh - 24px);
+  align-self: flex-start;
+  margin-block: 12px;
   overflow: auto;
   scrollbar-width: thin;
   scrollbar-color: rgba(148, 163, 184, 0.45) transparent;
+  scrollbar-gutter: stable;
 }
 
 .explore-sidebar-content::-webkit-scrollbar {
@@ -75,7 +79,7 @@
 
 .explore-sidebar-content::-webkit-scrollbar-track {
   background: transparent;
-  margin: 14px 0;
+  margin: 0;
   border-radius: 999px;
 }
 
@@ -87,7 +91,6 @@
 }
 
 .explore-sidebar-content::-webkit-scrollbar-button {
-  height: 14px;
   background: transparent;
 }
 
