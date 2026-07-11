@@ -50,128 +50,130 @@ export default function PositionsTable({
 
   return (
     <div className="table-card">
-      <table className="table">
-        <thead>
-          <tr>
-            <th style={{ textAlign: "left" }}>
-              <HeaderWithInfo
-                label={tt("portfolio.table.headers.company", "portfolio.table.headers.symbol", "Company")}
-                help={t("portfolio.help.company") ?? "Company name and ticker symbol."}
-              />
-            </th>
-            <th>
-              <HeaderWithInfo
-                label={t("portfolio.table.headers.qty")}
-                help={t("portfolio.help.qty") ?? "Shares/units held."}
-              />
-            </th>
-            <th>
-              <HeaderWithInfo
-                label={t("portfolio.table.headers.buyPrice")}
-                help={t("portfolio.help.buyPrice") ?? "Purchase price for this lot."}
-              />
-            </th>
-            <th>
-              <HeaderWithInfo
-                label={t("portfolio.table.headers.buyValue")}
-                help={t("portfolio.help.buyValue") ?? "Invested amount (qty x buy price)."}
-              />
-            </th>
-            <th>
-              <HeaderWithInfo
-                label={t("portfolio.table.headers.buyDate")}
-                help={t("portfolio.help.buyDate") ?? "Execution date/time for the trade."}
-              />
-            </th>
-            <th>
-              <HeaderWithInfo
-                label={t("portfolio.table.headers.last")}
-                help={t("portfolio.help.last") ?? "Most recent known market price."}
-              />
-            </th>
-            <th>
-              <HeaderWithInfo
-                label={t("portfolio.table.headers.value")}
-                help={t("portfolio.help.value") ?? "Current line value (last x quantity)."}
-              />
-            </th>
-            <th>
-              <HeaderWithInfo
-                label={t("portfolio.table.headers.pnl")}
-                help={t("portfolio.help.pnl") ?? "Unrealized profit/loss."}
-              />
-            </th>
-            {showActions && <th>{effectiveActionLabel}</th>}
-          </tr>
-        </thead>
-        <tbody>
-          {rows.length === 0 ? (
+      <div className="table-scroll">
+        <table className="table">
+          <thead>
             <tr>
-              <td
-                colSpan={totalColumns}
-                style={{ textAlign: "center", color: "var(--text-muted)" }}
-              >
-                {loading ? t("portfolio.table.loading") : t("portfolio.table.empty")}
-              </td>
+              <th style={{ textAlign: "left" }}>
+                <HeaderWithInfo
+                  label={tt("portfolio.table.headers.company", "portfolio.table.headers.symbol", "Company")}
+                  help={t("portfolio.help.company") ?? "Company name and ticker symbol."}
+                />
+              </th>
+              <th>
+                <HeaderWithInfo
+                  label={t("portfolio.table.headers.qty")}
+                  help={t("portfolio.help.qty") ?? "Shares/units held."}
+                />
+              </th>
+              <th>
+                <HeaderWithInfo
+                  label={t("portfolio.table.headers.buyPrice")}
+                  help={t("portfolio.help.buyPrice") ?? "Purchase price for this lot."}
+                />
+              </th>
+              <th>
+                <HeaderWithInfo
+                  label={t("portfolio.table.headers.buyValue")}
+                  help={t("portfolio.help.buyValue") ?? "Invested amount (qty x buy price)."}
+                />
+              </th>
+              <th>
+                <HeaderWithInfo
+                  label={t("portfolio.table.headers.buyDate")}
+                  help={t("portfolio.help.buyDate") ?? "Execution date/time for the trade."}
+                />
+              </th>
+              <th>
+                <HeaderWithInfo
+                  label={t("portfolio.table.headers.last")}
+                  help={t("portfolio.help.last") ?? "Most recent known market price."}
+                />
+              </th>
+              <th>
+                <HeaderWithInfo
+                  label={t("portfolio.table.headers.value")}
+                  help={t("portfolio.help.value") ?? "Current line value (last x quantity)."}
+                />
+              </th>
+              <th>
+                <HeaderWithInfo
+                  label={t("portfolio.table.headers.pnl")}
+                  help={t("portfolio.help.pnl") ?? "Unrealized profit/loss."}
+                />
+              </th>
+              {showActions && <th>{effectiveActionLabel}</th>}
             </tr>
-          ) : (
-            rows.map((row) => {
-              const company = bySymbol.get(row.symbol);
-              const logo = company?.logo ? assetPath(company.logo) : placeholderLogoPath;
-              const displayName = company?.name || row.symbol;
-              const actionHandler = onAction ?? noop;
-              return (
-                <tr key={row.id}>
-                  <td style={{ textAlign: "left" }}>
-                    <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                      <LogoBadge src={logo} alt={`${displayName} logo`} size={24} />
-                      <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.2 }}>
-                        <span style={{ fontWeight: 700 }}>{displayName}</span>
-                        <span style={{ fontSize: "0.8rem", color: "var(--text-muted)" }}>
-                          {row.symbol}
-                        </span>
+          </thead>
+          <tbody>
+            {rows.length === 0 ? (
+              <tr>
+                <td
+                  colSpan={totalColumns}
+                  style={{ textAlign: "center", color: "var(--text-muted)" }}
+                >
+                  {loading ? t("portfolio.table.loading") : t("portfolio.table.empty")}
+                </td>
+              </tr>
+            ) : (
+              rows.map((row) => {
+                const company = bySymbol.get(row.symbol);
+                const logo = company?.logo ? assetPath(company.logo) : placeholderLogoPath;
+                const displayName = company?.name || row.symbol;
+                const actionHandler = onAction ?? noop;
+                return (
+                  <tr key={row.id}>
+                    <td style={{ textAlign: "left" }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                        <LogoBadge src={logo} alt={`${displayName} logo`} size={24} />
+                        <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.2 }}>
+                          <span style={{ fontWeight: 700 }}>{displayName}</span>
+                          <span style={{ fontSize: "0.8rem", color: "var(--text-muted)" }}>
+                            {row.symbol}
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                  <td className="num">
-                    {row.qty.toLocaleString(undefined, { maximumFractionDigits: 6 })}
-                  </td>
-                  <td className="num">{fmt(row.buyPrice)}</td>
-                  <td className="num">{fmt(row.buyValue)}</td>
-                  <td
-                    style={{
-                      whiteSpace: "nowrap",
-                      textAlign: "right",
-                      color: "var(--text-muted)",
-                    }}
-                  >
-                    {buyDateFormatter.format(row.buyDate)}
-                  </td>
-                  <td className="num">{fmt(row.last)}</td>
-                  <td className="num">{fmt(row.value)}</td>
-                  <td className={`num ${row.pnlAbs >= 0 ? "pos" : "neg"}`}>
-                    {fmt(row.pnlAbs)}{" "}
-                    <span className={row.pnlPct >= 0 ? "pos" : "neg"}>
-                      ({row.pnlPct.toFixed(1)}%)
-                    </span>
-                  </td>
-                  {showActions && (
-                    <td style={{ textAlign: "right" }}>
-                      <button
-                        type="button"
-                        className="btn btn-sell"
-                        onClick={() => actionHandler(row)}
-                      >
-                        {effectiveActionLabel}
-                      </button>
                     </td>
-                  )}
-                </tr>
-              );
-            })
-          )}
-        </tbody>
-      </table>
+                    <td className="num">
+                      {row.qty.toLocaleString(undefined, { maximumFractionDigits: 6 })}
+                    </td>
+                    <td className="num">{fmt(row.buyPrice)}</td>
+                    <td className="num">{fmt(row.buyValue)}</td>
+                    <td
+                      style={{
+                        whiteSpace: "nowrap",
+                        textAlign: "right",
+                        color: "var(--text-muted)",
+                      }}
+                    >
+                      {buyDateFormatter.format(row.buyDate)}
+                    </td>
+                    <td className="num">{fmt(row.last)}</td>
+                    <td className="num">{fmt(row.value)}</td>
+                    <td className={`num ${row.pnlAbs >= 0 ? "pos" : "neg"}`}>
+                      {fmt(row.pnlAbs)}{" "}
+                      <span className={row.pnlPct >= 0 ? "pos" : "neg"}>
+                        ({row.pnlPct.toFixed(1)}%)
+                      </span>
+                    </td>
+                    {showActions && (
+                      <td style={{ textAlign: "right" }}>
+                        <button
+                          type="button"
+                          className="btn btn-sell"
+                          onClick={() => actionHandler(row)}
+                        >
+                          {effectiveActionLabel}
+                        </button>
+                      </td>
+                    )}
+                  </tr>
+                );
+              })
+            )}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

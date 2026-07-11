@@ -786,6 +786,32 @@ input:focus {
   padding: 4px 8px 8px;
 }
 
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.55) transparent;
+}
+
+.table-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.table-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    90deg,
+    rgba(148, 163, 184, 0.55),
+    rgba(99, 102, 241, 0.45)
+  );
+  border-radius: 999px;
+}
+
 /* Grid cards layout */
 .grid-cards {
   display: grid;
