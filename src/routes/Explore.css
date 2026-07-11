@@ -617,6 +617,35 @@
   color: var(--success);
 }
 
+@media (max-width: 1080px) {
+  .quicktrade {
+    width: 100%;
+    align-items: stretch;
+    margin-left: 0;
+  }
+
+  .quicktrade-controls {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: stretch;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .quicktrade-owned {
+    width: 100%;
+  }
+
+  .quicktrade-input,
+  .quicktrade-action {
+    width: 100%;
+  }
+
+  .quicktrade-msg {
+    align-self: flex-start;
+  }
+}
+
 @media (max-width: 720px) {
   .explore-header-top {
     flex-direction: column;
@@ -624,24 +653,8 @@
     gap: 20px;
   }
 
-  .quicktrade {
-    align-items: stretch;
-  }
-
   .quicktrade-controls {
     justify-content: flex-start;
-  }
-
-  .quicktrade-input {
-    width: 100%;
-  }
-
-  .quicktrade-action {
-    width: 100%;
-  }
-
-  .quicktrade-msg {
-    align-self: flex-start;
   }
 }
 
