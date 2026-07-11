@@ -3,7 +3,7 @@ import { auth, db } from './firebase'
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth'
 import { doc, getDoc, serverTimestamp, setDoc } from 'firebase/firestore'
 import { useI18n } from './i18n/I18nProvider'
-import type { TranslationKey } from './i18n/eng'
+import type { TranslationKey } from './i18n/lang'
 import { recordWealthSnapshot } from './lib/wealthHistory'
 
 type Mode = 'in' | 'up'
