@@ -549,6 +549,11 @@
 }
 
 @media (max-width: 840px) {
+  .trade-content-shell {
+    max-width: 100%;
+    padding: 0 12px 28px;
+  }
+
   .trade-page-header {
     align-items: flex-start;
   }

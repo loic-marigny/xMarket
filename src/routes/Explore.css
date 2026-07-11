@@ -68,6 +68,8 @@
   align-self: flex-start;
   margin-block: 12px;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
   scrollbar-width: thin;
   scrollbar-color: rgba(148, 163, 184, 0.45) transparent;
   scrollbar-gutter: stable;
@@ -172,12 +174,17 @@
 @media (max-width: 960px) {
   .explore-page {
     padding: 0;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
   }
 
   .explore-layout {
     --sidebar-width: min(320px, 88vw);
     display: block;
-    min-height: auto;
+    min-height: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 
   .explore-sidebar {
@@ -194,8 +201,28 @@
   }
 
   .explore-main {
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
     margin-right: 0;
     padding-right: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+  }
+
+  .explore-main-content {
+    min-height: auto;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .explore-content-shell {
+    max-width: 100%;
+    padding: 0 12px;
   }
 
   .explore-layout.sidebar-collapsed .explore-main-content {
