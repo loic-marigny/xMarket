@@ -31,10 +31,6 @@
   gap: 24px;
 }
 
-.explore-layout.sidebar-collapsed .trade-content-shell {
-  padding-left: 32px;
-}
-
 .explore-main-content.trade-content {
   flex: 0 0 auto;
   min-height: auto;
